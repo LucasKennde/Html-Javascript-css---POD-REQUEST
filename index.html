@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pod Request</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wrapper">
+        <div class="container">
+            <img src="assets/logo.png" id="logo"/>
+            <div class="content">
+                <span><strong>Publish your podcasts</strong>
+                    everywhere.</span>
+                <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+                <form onsubmit="validarFormulario(event)">
+                <label class="email">
+                    <input type="text" id="email" placeholder="Email address">
+                    <button>Request Access</button>
+                </label>
+                <p id="mensagem"></p>
+                </form>
+                <section class="logo-podcasts">
+                    <img src="assets/spotifyPodCast.png" alt="" srcset="">
+                    <img src="assets/applePodCast.png" alt="" srcset="">
+                    <img src="assets/googlePodCast.png" alt="" srcset="">
+                    <img src="assets/pocketCast.png" alt="" srcset="">
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

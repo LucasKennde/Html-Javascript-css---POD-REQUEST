@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #121725;
+    
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url('assets/bacground-img.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    padding-left: 2rem;
+    
+}
+
+#logo{
+    width: 135px;
+    transform: translateY(-50%);
+}
+.content{
+    width: 100%;
+    max-width: 723px;
+    height: auto;
+    background: #121725;
+
+    padding-top: 88px;
+    padding-right: 58px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+    span{
+        font-size: 3.2rem;
+        line-height: 62px;
+        font-weight: 300;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    strong{
+        color: #54E6AF;
+        font-weight: 300;
+    }
+    p{
+        color: #C2CBE5;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+        width: 445px;
+
+    }
+
+}
+
+.email{
+    width: 427px;
+    padding: 5px;
+    border-radius: 2rem;
+    background: #2C344B;
+
+    display: flex;
+    justify-content: space-between;
+    input,button{
+        padding: 0.5rem;
+        border-radius:2rem;
+        border: none;
+    }
+    input{
+        width: 50%;
+        background-color: transparent;
+        outline: none;
+        color: #fff;
+        font-weight: 500;
+    }
+    button{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        padding: 0.5rem 0.8rem;
+        color: #121725;
+        background-color: #54E6AF;
+        box-shadow: 0px 2px 4px 0px #54E6AF24;
+        cursor: pointer;
+    }   
+    button:hover{
+        background-color: #B3FFE2;
+
+    }
+    
+}
+#mensagem{
+    padding: 8px 32px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.28px;
+
+}
+.logo-podcasts{
+    display: flex;
+    gap: 40px;
+    img{
+        height: 29px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        background-image: none;
+        
+    }
+    .content{
+        padding-bottom: 1rem;
+    }
+    .wrapper{
+        background-image: url('assets/backgroundTablet.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right top;
+        
+    }
+}   
+
+@media screen and (max-width:430px) {
+
+    body{
+        background-color: #121725;
+    }
+    .wrapper{
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .container{
+        align-items: center;
+        background-color: #12172583 !important;
+        min-height: 100vh;
+        justify-content: center;
+        gap: 2rem;
+        padding-left: 0px;
+        
+    }
+    .content{
+        background-color: #12172500;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+        width: 100%;
+        span{
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 38px;
+            text-align: center;
+            
+        }
+        p{
+            width: 100%;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 25px;
+            text-align: center;
+
+        }
+    }
+
+        .email{
+            width: 100%;
+        }
+   
+        .logo-podcasts{
+            display: flex;
+            gap: 23px;
+            img{
+                height: 17px;
+            }
+        }
+}
